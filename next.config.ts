@@ -6,8 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/blackoding' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/blackoding' : '',
+  // Remover basePath e assetPrefix por enquanto para evitar conflitos
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/blackoding' : '',
+  // basePath: process.env.NODE_ENV === 'production' ? '/blackoding' : '',
 };
 
 export default nextConfig;
