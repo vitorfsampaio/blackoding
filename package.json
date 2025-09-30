@@ -2,11 +2,16 @@
   "name": "blackoding",
   "version": "0.1.0",
   "private": true,
+  "description": "Landing page moderna para Blackoding - IA Solutions",
+  "author": "Blackoding",
+  "homepage": "https://blackoding.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "export": "next build && next export",
+    "deploy": "npm run build && touch out/.nojekyll && git add out/ && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.8",

@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BLACKODING - IA Solutions
 
-## Getting Started
+Uma landing page moderna e responsiva para a Blackoding, empresa especializada em soluções de inteligência artificial e transformação digital.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
+- **Next.js 14** - Framework React
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **Framer Motion** - Animações
+- **React Icons** - Ícones
+
+## ✨ Funcionalidades
+
+- Design responsivo e moderno
+- Animações fluidas com Framer Motion
+- Seções interativas com efeitos de hover
+- Formulário de contato completo
+- Otimização para SEO
+- Performance otimizada
+
+## 🛠️ Como Executar
+
+### Pré-requisitos
+- Node.js 18+ 
+- npm ou yarn
+
+### Instalação
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seu-usuario/blackoding.git
+cd blackoding
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Execute o projeto em desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## Learn More
+## 📁 Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+└── components/
+    ├── Header.tsx
+    ├── Hero.tsx
+    ├── SolutionsSection.tsx
+    ├── TestimonialsSection.tsx
+    ├── TeamSection.tsx
+    ├── PricingSection.tsx
+    ├── Footer.tsx
+    └── ...
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Seções da Landing Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Hero** - Apresentação principal com CTA
+- **Soluções** - Serviços oferecidos
+- **Depoimentos** - Testemunhos de clientes
+- **Equipe** - Apresentação da equipe
+- **Preços** - Planos e garantias
+- **Contato** - Formulário de contato
 
-## Deploy on Vercel
+## 🚀 Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### GitHub Pages (Recomendado)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O projeto está configurado para deploy automático no GitHub Pages:
+
+1. **Deploy Automático**: A cada push na branch `main`, o GitHub Actions fará o deploy automaticamente
+2. **URL**: `https://seu-usuario.github.io/blackoding`
+3. **Configuração**: Vá em Settings > Pages e configure Source como "GitHub Actions"
+
+### Deploy Manual
+
+```bash
+# Build estático
+npm run build
+
+# Deploy manual
+npm run deploy
+```
+
+### Vercel (Alternativa)
+
+1. Conecte seu repositório GitHub ao Vercel
+2. Configure as variáveis de ambiente se necessário
+3. O deploy será automático a cada push
+
+## 📄 Licença
+
+Este projeto é propriedade da Blackoding. Todos os direitos reservados.
+
+## 📞 Contato
+
+- **Website**: [blackoding.com](https://blackoding.com)
+- **WhatsApp**: [Clique aqui](https://wa.me/5511999999999)
+- **Email**: contato@blackoding.com
