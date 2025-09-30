@@ -67,7 +67,7 @@ export default function PricingSection() {
           <h2 className="section-title">
             NOSSA <span className="text-green-500">PROMESSA</span>
           </h2>
-          <p className="text-xl text-gray-300 mb-8 flex-center gap-2">
+          <p className="text-xl text-gray-300 mb-8 flex-center gap-2 pricing-subtitle">
             <FaBolt className="text-green-500" />
             EM ATÉ 72 HORAS, VOCÊ TEM:
           </p>
