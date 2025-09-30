@@ -1,8 +1,34 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
 
 export default function TestimonialsSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    if (sectionRef.current) {
+      const rect = sectionRef.current.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      setMousePosition({ x, y });
+      
+      // Update CSS custom properties for spotlight
+      sectionRef.current.style.setProperty('--mouse-x', `${x}px`);
+      sectionRef.current.style.setProperty('--mouse-y', `${y}px`);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setMousePosition({ x: 0, y: 0 });
+    if (sectionRef.current) {
+      sectionRef.current.style.setProperty('--mouse-x', '50%');
+      sectionRef.current.style.setProperty('--mouse-y', '50%');
+    }
+  };
+
   const testimonials = [
     {
       quote: "Saí de um negócio amador para uma empresa que já está nos 6 dígitos. A Blackoding transformou completamente minha presença digital.",
@@ -37,7 +63,13 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section id="depoimentos" className="section-padding bg-gray-900">
+    <section 
+      ref={sectionRef}
+      id="depoimentos" 
+      className="section-padding bg-gray-900 testimonials-section"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="container-centered">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -69,6 +101,10 @@ export default function TestimonialsSection() {
               }}
               viewport={{ once: true }}
               className="testimonial-card"
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.2 }
+              }}
             >
               <p className="testimonial-quote">
                 {testimonial.quote}

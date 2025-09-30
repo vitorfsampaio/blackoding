@@ -55,6 +55,22 @@ export default function SolutionsSection() {
 
   return (
     <section id="solucoes" className="section-padding bg-black">
+      {/* Animated Background Elements */}
+      <div className="solutions-particles">
+        <div className="solutions-particle" style={{ top: '10%', left: '10%' }}></div>
+        <div className="solutions-particle" style={{ top: '20%', left: '80%' }}></div>
+        <div className="solutions-particle" style={{ top: '60%', left: '20%' }}></div>
+        <div className="solutions-particle" style={{ top: '80%', left: '90%' }}></div>
+        <div className="solutions-particle" style={{ top: '40%', left: '50%' }}></div>
+        <div className="solutions-particle" style={{ top: '30%', left: '5%' }}></div>
+        <div className="solutions-particle" style={{ top: '70%', left: '60%' }}></div>
+        <div className="solutions-particle" style={{ top: '15%', left: '60%' }}></div>
+        <div className="solutions-particle" style={{ top: '85%', left: '30%' }}></div>
+        <div className="solutions-particle" style={{ top: '50%', left: '85%' }}></div>
+      </div>
+      
+      <div className="solutions-grid-pattern"></div>
+      
       <div className="container-centered">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

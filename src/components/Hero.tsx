@@ -9,11 +9,26 @@ export default function Hero() {
 
   return (
     <section id="hero" className="min-h-screen flex-center bg-black pt-16 sm:pt-18 lg:pt-20">
+      <div className="hero-particles">
+        <div className="particle" style={{ top: '20%', left: '10%' }}></div>
+        <div className="particle" style={{ top: '60%', left: '80%' }}></div>
+        <div className="particle" style={{ top: '30%', left: '70%' }}></div>
+        <div className="particle" style={{ top: '80%', left: '20%' }}></div>
+        <div className="particle" style={{ top: '40%', left: '50%' }}></div>
+        <div className="particle" style={{ top: '70%', left: '60%' }}></div>
+        <div className="particle" style={{ top: '10%', left: '90%' }}></div>
+        <div className="particle" style={{ top: '90%', left: '40%' }}></div>
+      </div>
+      
+      <div className="hero-grid"></div>
+      <div className="hero-grid-secondary"></div>
+      <div className="hero-grid-lines"></div>
+      
       <div className="hero-container">
         {/* Main Headline */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           className="hero-headline"
         >
@@ -29,8 +44,8 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           className="hero-buttons"
         >
@@ -54,8 +69,8 @@ export default function Hero() {
 
         {/* Stats */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           className="hero-stats"
         >
