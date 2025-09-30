@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaTimes, FaExclamationTriangle, FaArrowDown, FaGlobe, FaCamera, FaVideo, FaUsers, FaExclamationCircle } from 'react-icons/fa';
+import { FaExclamationTriangle, FaArrowDown, FaGlobe, FaCamera, FaVideo, FaUsers, FaExclamationCircle } from 'react-icons/fa';
 
 export default function ProblemSection() {
   const problems = [

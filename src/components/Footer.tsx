@@ -13,7 +13,7 @@ export default function Footer() {
               BLACKODING - IA SOLUTIONS
             </h3>
             <p className="text-gray-400 text-lg">
-              "Você não precisa aprender IA. Precisa só da Blackoding."
+              &ldquo;Você não precisa aprender IA. Precisa só da Blackoding.&rdquo;
             </p>
             <div className="flex flex-col gap-2 text-gray-400">
               <div className="flex items-center gap-2">

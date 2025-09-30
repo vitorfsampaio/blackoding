@@ -1,11 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
 export default function TestimonialsSection() {
   const sectionRef = useRef<HTMLElement>(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
     if (sectionRef.current) {
@@ -13,7 +12,6 @@ export default function TestimonialsSection() {
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       
-      setMousePosition({ x, y });
       
       // Update CSS custom properties for spotlight
       sectionRef.current.style.setProperty('--mouse-x', `${x}px`);
@@ -22,7 +20,6 @@ export default function TestimonialsSection() {
   };
 
   const handleMouseLeave = () => {
-    setMousePosition({ x: 0, y: 0 });
     if (sectionRef.current) {
       sectionRef.current.style.setProperty('--mouse-x', '50%');
       sectionRef.current.style.setProperty('--mouse-y', '50%');

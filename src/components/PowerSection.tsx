@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaBullseye, FaBolt, FaClock, FaCheckCircle, FaStar, FaRocket } from 'react-icons/fa';
+import { FaBullseye, FaBolt, FaClock, FaCheckCircle, FaStar } from 'react-icons/fa';
 
 export default function PowerSection() {
   const differentials = [
