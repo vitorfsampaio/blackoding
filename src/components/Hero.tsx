@@ -8,8 +8,9 @@ export default function Hero() {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <section id="hero" className="min-h-screen flex-center bg-black pt-16 sm:pt-18 lg:pt-20">
-      <div className="hero-particles">
+    <section id="hero" className="min-h-screen flex-center bg-black pt-16 lg:pt-20">
+      {/* Background Animations - Hidden on mobile for performance */}
+      <div className="hidden md:block hero-particles">
         <div className="particle" style={{ top: '20%', left: '10%' }}></div>
         <div className="particle" style={{ top: '60%', left: '80%' }}></div>
         <div className="particle" style={{ top: '30%', left: '70%' }}></div>
@@ -20,9 +21,9 @@ export default function Hero() {
         <div className="particle" style={{ top: '90%', left: '40%' }}></div>
       </div>
       
-      <div className="hero-grid"></div>
-      <div className="hero-grid-secondary"></div>
-      <div className="hero-grid-lines"></div>
+      <div className="hidden md:block hero-grid"></div>
+      <div className="hidden md:block hero-grid-secondary"></div>
+      <div className="hidden md:block hero-grid-lines"></div>
       
       <div className="hero-container">
         {/* Main Headline */}
@@ -89,18 +90,19 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Video Modal */}
+      {/* Video Modal - Mobile Optimized */}
       {showVideo && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4">
           <div className="relative w-full max-w-4xl">
             <button
               onClick={() => setShowVideo(false)}
-              className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors"
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors p-2"
+              aria-label="Fechar vídeo"
             >
               <FaTimes size={24} />
             </button>
             <div className="aspect-video bg-gray-800 rounded-lg flex items-center justify-center">
-              <p className="text-white text-lg">
+              <p className="text-white text-base md:text-lg text-center px-4">
                 [Aqui seria inserido o vídeo VSL]
               </p>
             </div>

@@ -4,28 +4,28 @@ import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-black">
+    <footer className="bg-black section-padding">
       <div className="container-centered">
         <div className="footer-grid">
           {/* Brand */}
           <div className="footer-brand">
-            <h3 className="text-2xl font-bold text-white">
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
               BLACKODING - IA SOLUTIONS
             </h3>
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-400 text-base md:text-lg mb-4">
               &ldquo;Você não precisa aprender IA. Precisa só da Blackoding.&rdquo;
             </p>
-            <div className="flex flex-col gap-2 text-gray-400">
+            <div className="flex flex-col gap-2 text-gray-400 text-sm md:text-base">
               <div className="flex items-center gap-2">
-                <FaWhatsapp className="text-green-500" size={16} />
+                <FaWhatsapp className="text-green-500 flex-shrink-0" size={16} />
                 <span>Atendimento via WhatsApp</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-green-500">•</span>
+                <span className="text-green-500 flex-shrink-0">•</span>
                 <span>Entrega em até 72 horas</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-green-500">•</span>
+                <span className="text-green-500 flex-shrink-0">•</span>
                 <span>Transformando amadores em autoridades</span>
               </div>
             </div>
@@ -33,20 +33,20 @@ export default function Footer() {
 
           {/* Links */}
           <div className="footer-links">
-            <h4>LINKS</h4>
-            <ul>
+            <h4 className="text-white font-semibold mb-4 text-sm md:text-base">LINKS</h4>
+            <ul className="space-y-2">
               <li>
-                <a href="#">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">
                   Termo de Adesão
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">
                   Política de Privacidade
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">
                   Perguntas Frequentes
                 </a>
               </li>
@@ -55,25 +55,25 @@ export default function Footer() {
 
           {/* Company */}
           <div className="footer-links">
-            <h4>EMPRESA</h4>
-            <ul>
+            <h4 className="text-white font-semibold mb-4 text-sm md:text-base">EMPRESA</h4>
+            <ul className="space-y-2">
               <li>
-                <a href="#solucoes">
+                <a href="#solucoes" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">
                   Soluções
                 </a>
               </li>
               <li>
-                <a href="#depoimentos">
+                <a href="#depoimentos" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">
                   Depoimentos
                 </a>
               </li>
               <li>
-                <a href="#equipe">
+                <a href="#equipe" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">
                   Equipe
                 </a>
               </li>
               <li>
-                <a href="#contato">
+                <a href="#contato" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">
                   Contato
                 </a>
               </li>
@@ -83,7 +83,7 @@ export default function Footer() {
 
         {/* Contact Form */}
         <div className="footer-form">
-          <h4>
+          <h4 className="text-lg md:text-xl font-bold text-white text-center mb-6">
             PREENCHA COM SUAS<br />
             INFORMAÇÕES ABAIXO
           </h4>
@@ -166,10 +166,10 @@ export default function Footer() {
         {/* Bottom */}
         <div className="footer-bottom">
           <div className="footer-copyright">
-            <p>
+            <p className="text-sm md:text-base">
               BLACKODING 2025 © Todos os direitos reservados.
             </p>
-            <p>
+            <p className="text-xs md:text-sm text-gray-500">
               CNPJ: 00.000.000/0001-00, com sede na Rua Exemplo, 123, São Paulo, SP.
             </p>
           </div>
@@ -179,6 +179,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
+              className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
             >
               <FaInstagram size={20} />
             </a>
@@ -186,7 +187,7 @@ export default function Footer() {
               href="https://wa.me/5511999999999"
               target="_blank"
               rel="noopener noreferrer"
-              className="footer-social-whatsapp"
+              className="footer-social-whatsapp w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
               aria-label="WhatsApp"
             >
               <FaWhatsapp size={20} />
@@ -196,6 +197,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
+              className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
             >
               <FaLinkedin size={20} />
             </a>
