@@ -1,6 +1,6 @@
 'use client';
 
-import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram, FaLinkedin, FaClock, FaUserGraduate } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -21,11 +21,11 @@ export default function Footer() {
                 <span>Atendimento via WhatsApp</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-green-500 flex-shrink-0">•</span>
+                <FaClock className="text-green-500 flex-shrink-0" size={16} />
                 <span>Entrega em até 72 horas</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-green-500 flex-shrink-0">•</span>
+                <FaUserGraduate className="text-green-500 flex-shrink-0" size={16} />
                 <span>Transformando amadores em autoridades</span>
               </div>
             </div>
